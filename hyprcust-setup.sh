@@ -8,7 +8,12 @@ echo "Instalando programas basicos adicionales"
         paru -S visual-studio-code-bin --noconfirm
     echo "Visual Studio Code --> OK"
         
+         paru -S google-chrome --noconfirm
+    echo "Google Chrome --> OK"
+    
+        paru -S debtap --noconfirm
     echo "Debtap --> OK"
+
         paru -S virtualbox-host-modules-arch --noconfirm
         paru -S virtualbox --noconfirm
             sudo modprobe vboxdrv
