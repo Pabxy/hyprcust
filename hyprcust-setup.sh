@@ -22,14 +22,15 @@ echo "Instalando todos los paquetes....."
     echo ""
 
 echo "Instalando programas basicos adicionales"
+echo ""
         paru -S visual-studio-code-bin --noconfirm > /dev/null 2>&1
-    echo "Visual Studio Code --> OK"
+    echo "  Visual Studio Code  OK"
         
          paru -S google-chrome --noconfirm > /dev/null 2>&1
-    echo "Google Chrome --> OK"
+    echo "  Google Chrome       OK"
     
         paru -S debtap --noconfirm > /dev/null 2>&1
-    echo "Debtap --> OK"
+    echo "  Debtap              OK"
 
         paru -S virtualbox-host-modules-arch --noconfirm > /dev/null 2>&1
         paru -S virtualbox --noconfirm > /dev/null 2>&1
@@ -42,5 +43,11 @@ echo "Instalando programas basicos adicionales"
 echo ""
 
 echo "Configurando paquetes...."
+echo ""
     cp -r ./config/* ~/.config > /dev/null 2>&1
     sudo chown -R pablo:pablo ~/.config > /dev/null 2>&1
+
+echo "HYPRCUST SETUP COMPLETE"
+echo ""
+sleep 3
+exit
