@@ -46,7 +46,7 @@ echo ""
 
 echo "-> Configurando paquetes...."
 echo ""
-    cp -r ./config/* ~/.config > /dev/null 2>&1
+    cp ./config/* ~/.config > /dev/null 2>&1
     sudo chown -R pablo:pablo ~/.config > /dev/null 2>&1
 
 echo "      HYPRCUST SETUP COMPLETE"
