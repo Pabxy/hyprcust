@@ -1,6 +1,8 @@
 #Hyprland Custom Script#
 
+clear
 
+echo ""
 echo "-> Instalando dependencias....."
     sudo pacman -S zsh pulseaudio pavucontrol nano git neofetch kitty --noconfirm > /dev/null 2>&1
 
