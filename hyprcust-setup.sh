@@ -49,6 +49,8 @@ echo ""
     mv config ~/.config > /dev/null 2>&1
     mv .zshrc ~/.zshrc > /dev/null 2>&1
     sudo chown -R pablo:pablo ~/.config > /dev/null 2>&1
+    chsh -s /bin/zsh
+    sudo systemctl enable sddm
 
 echo "      HYPRCUST SETUP COMPLETE"
 echo ""
