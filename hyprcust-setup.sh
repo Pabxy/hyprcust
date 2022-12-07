@@ -3,8 +3,8 @@
 clear
 
 echo ""
-echo "-> Instalando dependencias....."
-    sudo pacman -S zsh pulseaudio pavucontrol nano git neofetch kitty --noconfirm > /dev/null 2>&1
+echo "-> Instalando paquetes principales....."
+    sudo pacman -S zsh nautilus pulseaudio pavucontrol nano git neofetch kitty --noconfirm > /dev/null 2>&1
 
 echo "-> Instalando todos los paquetes....."    
 
@@ -64,11 +64,23 @@ echo ""
 
 echo "-> Configurando paquetes...."
 echo ""
+
+#Copiar archivos de configuracion
     mv config ~/.config > /dev/null 2>&1
     mv .zshrc ~/.zshrc > /dev/null 2>&1
     sudo chown -R pablo:pablo ~/.config > /dev/null 2>&1
+
+#Cambiar Shell a ZSH
     chsh -s /bin/zsh
-    sudo systemctl enable sddm
+
+#Habilitar SDDM
+    sudo systemctl enable sddm > /dev/null 2>&1
+
+#Mode oscuro gnome
+    gsettings set org.gnome.desktop.interface color-scheme "prefer dark" > /dev/null 2>&1
+
+
+
 
 echo ""
 echo "      HYPRCUST SETUP COMPLETE"
